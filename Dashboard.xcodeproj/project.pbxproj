@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3064BE3429E3318000558592 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3064BE3329E3318000558592 /* Cat.swift */; };
+		3064BE3829E3328C00558592 /* ImageFromNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3064BE3729E3328C00558592 /* ImageFromNetwork.swift */; };
 		30F59E3429E22E7C00937F02 /* DashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F59E3329E22E7C00937F02 /* DashboardApp.swift */; };
 		30F59E3629E22E7C00937F02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F59E3529E22E7C00937F02 /* ContentView.swift */; };
 		30F59E3829E22E7E00937F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F59E3729E22E7E00937F02 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3064BE3329E3318000558592 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		3064BE3729E3328C00558592 /* ImageFromNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromNetwork.swift; sourceTree = "<group>"; };
 		30F59E3029E22E7C00937F02 /* Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F59E3329E22E7C00937F02 /* DashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardApp.swift; sourceTree = "<group>"; };
 		30F59E3529E22E7C00937F02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				30F59E3329E22E7C00937F02 /* DashboardApp.swift */,
+				3064BE3729E3328C00558592 /* ImageFromNetwork.swift */,
 				30F59E5E29E23F9B00937F02 /* Views */,
 				30F59E3729E22E7E00937F02 /* Assets.xcassets */,
 				30F59E3C29E22E7E00937F02 /* Dashboard.entitlements */,
@@ -136,6 +141,7 @@
 			children = (
 				30F59E3529E22E7C00937F02 /* ContentView.swift */,
 				30F59E5F29E23FC600937F02 /* Calendar.swift */,
+				3064BE3329E3318000558592 /* Cat.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3064BE3829E3328C00558592 /* ImageFromNetwork.swift in Sources */,
+				3064BE3429E3318000558592 /* Cat.swift in Sources */,
 				30F59E3629E22E7C00937F02 /* ContentView.swift in Sources */,
 				30F59E6029E23FC600937F02 /* Calendar.swift in Sources */,
 				30F59E3429E22E7C00937F02 /* DashboardApp.swift in Sources */,

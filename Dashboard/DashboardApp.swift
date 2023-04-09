@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct DashboardApp: App {
+    var netthing = ImageFromNetwork()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(netthing)
         }
     }
 }
