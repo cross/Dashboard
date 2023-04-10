@@ -12,6 +12,7 @@ struct DashboardApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            .environmentObject(ImageFromNetwork())        }
+                .environmentObject(ImageFromNetwork())
+        }
     }
 }

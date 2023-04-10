@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var listMembers: Array<String> = ["Foo","Bar","Baz"]
+    var listMembers: Array<String> = ["Foo","Bar","Baz","Donkey"]
     var body: some View {
         GeometryReader { geo in
             HStack {
@@ -20,7 +20,8 @@ struct ContentView: View {
 //                .navigationTitle("Selections")
                 VStack {
                     Cat()
-
+                        .frame(maxHeight: geo.size.height * 0.60)
+                        .padding(.top)
                     Spacer()
                     VStack {
                         Image(systemName: "globe")
@@ -38,6 +39,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ImageFromNetwork())
     }
 }
 
