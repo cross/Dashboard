@@ -9,9 +9,12 @@ import Foundation
 import SwiftUI
 
 class ImageFromNetwork: ObservableObject {
-    var imgUrl: String = "https://cataas.com/cat"
-    @Published var cat: Image?
+    private var imgUrl: String?
+    @Published var image: Image?
     
+    init(url: String? = nil) {
+        self.imgUrl = url
+    }
     // Create an image from Data, differently depending on platform
     func createImage(_ value: Data) -> Image {
         #if canImport(UIKit)
@@ -26,7 +29,8 @@ class ImageFromNetwork: ObservableObject {
     }
     // So, this shouldn't be Cat specific.  :-/  But for now.
     func getCatImage() {
-        guard let catUrl = URL(string: imgUrl) else { fatalError("Missing URL") }
+        guard imgUrl != nil else { return; }
+        guard let catUrl = URL(string: imgUrl!) else { fatalError("Missing URL") }
         
         let urlRequest = URLRequest(url: catUrl)
         
@@ -41,11 +45,14 @@ class ImageFromNetwork: ObservableObject {
             if response.statusCode == 200 {
                 guard let data = data else { return }
                 DispatchQueue.main.async {
-                    self.cat = self.createImage(data)
+                    self.image = self.createImage(data)
                 }
             }
         }
         dataTask.resume()
+    }
+    func setImgUrl(url: String) {
+        self.imgUrl = url
     }
     
 }

@@ -20,6 +20,7 @@ struct ContentView: View {
 //                .navigationTitle("Selections")
                 VStack {
                     Cat()
+
                     Spacer()
                     VStack {
                         Image(systemName: "globe")
@@ -37,7 +38,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ImageFromNetwork())
     }
 }
 
