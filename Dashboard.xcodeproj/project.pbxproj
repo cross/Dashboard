@@ -16,7 +16,7 @@
 		30F59E4629E22E7E00937F02 /* DashboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F59E4529E22E7E00937F02 /* DashboardTests.swift */; };
 		30F59E5029E22E7E00937F02 /* DashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F59E4F29E22E7E00937F02 /* DashboardUITests.swift */; };
 		30F59E5229E22E7E00937F02 /* DashboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F59E5129E22E7E00937F02 /* DashboardUITestsLaunchTests.swift */; };
-		30F59E6029E23FC600937F02 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F59E5F29E23FC600937F02 /* Calendar.swift */; };
+		30F59E6029E23FC600937F02 /* MyCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F59E5F29E23FC600937F02 /* MyCalendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		30F59E4B29E22E7E00937F02 /* DashboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F59E4F29E22E7E00937F02 /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
 		30F59E5129E22E7E00937F02 /* DashboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		30F59E5F29E23FC600937F02 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		30F59E5F29E23FC600937F02 /* MyCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				30F59E3529E22E7C00937F02 /* ContentView.swift */,
-				30F59E5F29E23FC600937F02 /* Calendar.swift */,
+				30F59E5F29E23FC600937F02 /* MyCalendar.swift */,
 				3064BE3329E3318000558592 /* Cat.swift */,
 			);
 			path = Views;
@@ -279,7 +279,7 @@
 				3064BE3829E3328C00558592 /* ImageFromNetwork.swift in Sources */,
 				3064BE3429E3318000558592 /* Cat.swift in Sources */,
 				30F59E3629E22E7C00937F02 /* ContentView.swift in Sources */,
-				30F59E6029E23FC600937F02 /* Calendar.swift in Sources */,
+				30F59E6029E23FC600937F02 /* MyCalendar.swift in Sources */,
 				30F59E3429E22E7C00937F02 /* DashboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

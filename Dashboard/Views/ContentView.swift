@@ -19,9 +19,13 @@ struct ContentView: View {
                 .frame(maxWidth: geo.size.width * 0.25)
 //                .navigationTitle("Selections")
                 VStack {
-                    Cat()
-                        .frame(maxHeight: geo.size.height * 0.60)
-                        .padding(.top)
+                    HStack {
+                        MyCalendar()
+                        Cat()
+                    }
+                    .padding(.top)
+                    .frame(maxHeight: geo.size.height * 0.60)
+
                     Spacer()
                     VStack {
                         Image(systemName: "globe")
